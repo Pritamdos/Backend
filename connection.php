@@ -53,7 +53,7 @@ if(isset($_POST['callsubmit'])){
 	$reason = $_POST['call_reason'];
 	$time = $_POST['call_time'];
 	
-   $sql = "INSERT INTO `callback_form_data` (`id`,`phone`,`order_type`,`reason`,`contact_time`) VALUES ('104','$phone','$type','$reason','$time');";
+   $sql = "INSERT INTO `callback_form_data` (`id`,`phone`,`order_type`,`reason`,`contact_time`) VALUES ('101','$phone','$type','$reason','$time');";
 
 	if ($conn->query($sql) === TRUE) {
 		$message = "We will call you later ! ";
@@ -67,16 +67,14 @@ if(isset($_POST['callsubmit'])){
 
 if(isset($_POST['registersubmit'])){
 	
-	$name = $_POST['regname'];
-	$email = $_POST['regemail'];
-	$country = $_POST['regcountry'];
-	$specialization = $_POST['regspecialization'];
-	$dob = $_POST['regdob'];
-	$userid = $_POST['reguserid'];
-	$password = $_POST['regpassword'];
+	$name = $_POST['reg_name'];
+	$email = $_POST['reg_email'];
+	$phone = $_POST['reg_phone'];
+	$education = $_POST['reg_education'];
+	$password = $_POST['reg_password'];
 	
-   $sql = "INSERT INTO `register_form_data` (`name`,`email`,`country`,`specialization`,`dob`,`userid`,`password`) 
-                     VALUES ('$name','$email','$country','$specialization','$dob','$userid','$password');";
+   $sql = "INSERT INTO `register_form_data` (`id`,`name`,`email`,`phone`,`education`,`password`) 
+                     VALUES ('102','$name','$email','$phone','$education','$password');";
 
 	if ($conn->query($sql) === TRUE) {
 		header("location:login.php");    
@@ -88,18 +86,18 @@ if(isset($_POST['registersubmit'])){
 
 if(isset($_POST['signsubmit'])){
 	
-	 $userid    = $_POST['signuserid'];
-    $password = $_POST['signpassword'];
+	$userid    = $_POST['signuserid'];
+   $password = $_POST['signpassword'];
    
-    $sql = "SELECT userid, password FROM `register_form_data` WHERE userid='$userid' AND password = '$password';";
-	 $result = $conn->query($sql);
+   $sql = "SELECT userid, password FROM `register_form_data` WHERE userid='$userid' AND password = '$password';";
+	$result = $conn->query($sql);
 
-    if ($result->num_rows > 0) {
+   if ($result->num_rows > 0) {
     // output data of each row
-     header("location:welcome.php");    
+    header("location:welcome.php");    
    }
-    else{
-		echo "Invalid Details";
+   else{
+	echo "Invalid Details";
 	} 
 }
 

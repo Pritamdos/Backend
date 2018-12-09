@@ -1,45 +1,61 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "oah";
+
+	// Create connection
+	$conn = new mysqli($servername, $username, $password, $dbname);
+
+	// Check connection
+	if ($conn->connect_error) {
+		die("Connection failed: " . $conn->connect_error);
+	} 
+
+   $sql = "SELECT * FROM `mini_form_data`;";
+	$result = $conn->query($sql);
+	
+	$call_sql = "SELECT * FROM `callback_form_data`;";
+   $call_result = $conn->query($call_sql);
+   
+   $reg_sql = "SELECT * FROM `register_form_data`;";
+	$reg_result = $conn->query($reg_sql);
+	
+	if(!$result OR !$call_result){
+		die ('SQL Error: ' . mysql_error($conn));
+	}
+?>
+
 <!DOCTYPE html>
 <html>
-
 <head>
 <title>OnlineAssignmenthelp.com -How it works </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta title="Want to place your order with the best assignment writing service? Find out how to order your essays, dissertation and thesis to assignment experts here. 
-
-
-                ">
-    <link rel="stylesheet" type="text/css" href="./assets/css/admindashboard.css
-    ">
+    <meta title="Want to place your order with the best assignment writing service? Find out how to order your essays, dissertation and thesis to assignment experts here.">
+    <link rel="stylesheet" type="text/css" href="./assets/css/admindashboard.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/font.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/animated.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/scrollanimations.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+	
 </head>
 
 <body>
 <div class="site-wrapper active" id="target">
         <div class="site-wrapper_left-col">
             <a href="#" class="logo dashboard-design">
-                <img src="./assets/images/OAH Logo.png"/>
-                
-                
-                
+                <img src="./assets/images/OAH Logo.png"/>          
             </a>
             <span class="toggles">
                 <a href="#" id="toggle"><i class="fa fa-bars"></i></a>
             </span>
-           
             <div class="left-nav">
                 <a href="#" class="op1"   data-modl="profile-details"  id="profile" ><i class="fa fa-user" aria-hidden="true"></i>Profile</a>
                 <a href="#" class="op1"   data-modl="order-details"  id="order1" ><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>Order Details</a>
                 <a href="#" class="op1"   data-modl="mini-order-details"  id="mini1" ><i class="fa fa-shopping-cart" aria-hidden="true"></i>Mini Order Details</a>
                 <a href="#"  class="op1"  data-modl="registered-user-details"  id="register-user" ><i class="fa fa-user"></i>Registered User</a>
                 <a href="#"  class="op1"  data-modl="call-back-details" id="call-back-deatils" ><i class="fa fa-phone" aria-hidden="true"></i>Call Back Details</a>
-                
             </div>
-         
         </div>
         <div class="site-wrapper_top-bar">
            <div class="popover__wrapper">
@@ -66,7 +82,6 @@
                                           <span class="profiles">
                                             Profile 
                                           </span>
-                                         
                                       </a>
                                   </li>
                                   <li>
@@ -74,20 +89,12 @@
                                        <i class="fa fa-sign-out user-icns" aria-hidden="true"></i>
                                         <span class="profiles">
                                             Logout 
-                                        </span>
-                                        
-                                          
+                                        </span>   
                                       </a>
                                   </li>
-
-                             </ul>
-
-                       
-                    </div>
-                   
+                             </ul>                       
+                    </div>                  
             </div>
-           
-          
         </div>
         <div class="wrapper hide" id="profile-details">
             <div class="wrapper_container">
@@ -171,7 +178,8 @@
                 
             </div>
         </div>
-        <div class="wrapper" id="order-details">
+        
+		<div class="wrapper" id="order-details">
             <div class="wrapper_container">
                  <div class="order-details-sec">
                         <span class="order-details-headings">
@@ -198,9 +206,7 @@
                             <th>Email</th>
                             <th>Items</th>
                             <th>Phone</th>
-                            <th>Address</th>
-                            
-    
+                            <th>Address</th>    
                         </tr>
                         <tbody class="tbodys">
                             <tr class="each-rows-secss">
@@ -413,6 +419,8 @@
                  </div>
             </div>
         </div>
+		
+		
         <div class="wrapper hide" id="mini-order-details">
             <div class="wrapper_container">
                  <div class="order-details-sec">
@@ -425,7 +433,7 @@
                             History Of  Mini Order Details
                         <span>
                         <span class="exports-files">
-                           <button type="submit" class="exports">
+                           <button type="submit" id="miniorder_excel" class="exports">
                              <span class="exp">
                                 <i class="fa fa-upload" aria-hidden="true"></i>
                              </span>
@@ -433,76 +441,38 @@
                         <span>
                  </div>
                  <div class="common-table-details-sections">
-                    <table cellspacing="0" class="deatils-tables">
-                        <tr class="table-headings">
-                            <th>Email</th>
+                    <table id="mini_order_data" cellspacing="0" class="deatils-tables">
+                        
+						     <tr class="table-headings">
+                            <th>Unique Id</th>
+                            <th>E-Mail</th>
                             <th>Subject</th>
-                            <th>Date</th>
-                            <th>Time Zone</th>
-                            <th>No Of Pages</th>
-                       
-                            
-    
+                            <th>Deadline Date</th>
+                            <th>No of Pages</th>    
+                            <th>Creation Date</th>    
                         </tr>
-                        <tbody class="tbodys">
-                            <tr class="each-rows-secss">
-                                <td>sonidos@gmail.com</td>
-                                <td>Math</td>
-                                <td>20-Aug-2018</td>
-                                <td>India</td>
-                                <td>5</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>sonidos@gmail.com</td>
-                                <td>Math</td>
-                                <td>20-Aug-2018</td>
-                                <td>India</td>
-                                <td>5</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>sonidos@gmail.com</td>
-                                <td>Math</td>
-                                <td>20-Aug-2018</td>
-                                <td>India</td>
-                                <td>5</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>sonidos@gmail.com</td>
-                                <td>Math</td>
-                                <td>20-Aug-2018</td>
-                                <td>India</td>
-                                <td>5</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>sonidos@gmail.com</td>
-                                <td>Math</td>
-                                <td>20-Aug-2018</td>
-                                <td>India</td>
-                                <td>5</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>sonidos@gmail.com</td>
-                                <td>Math</td>
-                                <td>20-Aug-2018</td>
-                                <td>India</td>
-                                <td>5</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>sonidos@gmail.com</td>
-                                <td>Math</td>
-                                <td>20-Aug-2018</td>
-                                <td>India</td>
-                                <td>5</td>
-                            </tr>
-
-                         
-                            
+                        
+						     <tbody class="tbodys">
+                         <?php
+									while ($row = mysqli_fetch_array($result))
+									{
+										echo '<tr class="each-rows-secss">
+												<td>'.$row['id'].'</td>
+												<td>'.$row['email'].'</td>
+												<td>'.$row['subject'].'</td>
+												<td>'. date('F d, Y',strtotime($row['date'])).'</td>
+                                     <td>'.$row['page_count'].'</td>
+                                     <td>'.$row['timestamp'].'</td>
+											   </tr>';
+									}
+							   ?>
                         </tbody>
                     </table>
                  </div>
             </div>
         </div>
-        <div class="wrapper hide" id="call-back-details">
+       
+ 	   <div class="wrapper hide" id="call-back-details">
             <div class="wrapper_container">
                  <div class="order-details-sec">
                         <span class="order-details-headings">
@@ -514,7 +484,7 @@
                             History Of  Call Back Details
                         <span>
                         <span class="exports-files">
-                           <button type="submit" class="exports">
+                           <button type="submit" id="callback_excel" class="exports">
                              <span class="exp">
                                 <i class="fa fa-upload" aria-hidden="true"></i>
                              </span>
@@ -522,164 +492,32 @@
                         <span>
                  </div>
                  <div class="common-table-details-sections">
-                    <table cellspacing="0" class="deatils-tables">
+                    <table id="callback_form_data" cellspacing="0" class="deatils-tables">
                         <tr class="table-headings">
-                            <th>Country Code</th>
+                            <th>Unique Id</th>
                             <th>Phone Number</th>
                             <th>Order Type</th>
                             <th>Reason For Call Back</th>
                             <th>Suitable Time</th>
-                       
-                            
-    
+                            <th>Created Timestamp</th>
                         </tr>
-                        <tbody class="tbodys">
-                            <tr class="each-rows-secss">
-                                <td>+91</td>
-                                <td>9089876756</td>
-                                <td>New Order</td>
-                                <td>Learning</td>
-                                <td>5:00 pm</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>+98</td>
-                                <td>01989876756</td>
-                                <td>Existing Order</td>
-                                <td>Reading</td>
-                                <td>9:00 pm</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>+91</td>
-                                <td>9089876756</td>
-                                <td>New Order</td>
-                                <td>Learning</td>
-                                <td>5:00 pm</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>+98</td>
-                                <td>01989876756</td>
-                                <td>Existing Order</td>
-                                <td>Reading</td>
-                                <td>9:00 pm</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>+91</td>
-                                <td>9089876756</td>
-                                <td>New Order</td>
-                                <td>Learning</td>
-                                <td>5:00 pm</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>+98</td>
-                                <td>01989876756</td>
-                                <td>Existing Order</td>
-                                <td>Reading</td>
-                                <td>9:00 pm</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>+91</td>
-                                <td>9089876756</td>
-                                <td>New Order</td>
-                                <td>Learning</td>
-                                <td>5:00 pm</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>+98</td>
-                                <td>01989876756</td>
-                                <td>Existing Order</td>
-                                <td>Reading</td>
-                                <td>9:00 pm</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>+91</td>
-                                <td>9089876756</td>
-                                <td>New Order</td>
-                                <td>Learning</td>
-                                <td>5:00 pm</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>+98</td>
-                                <td>01989876756</td>
-                                <td>Existing Order</td>
-                                <td>Reading</td>
-                                <td>9:00 pm</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>+91</td>
-                                <td>9089876756</td>
-                                <td>New Order</td>
-                                <td>Learning</td>
-                                <td>5:00 pm</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>+98</td>
-                                <td>01989876756</td>
-                                <td>Existing Order</td>
-                                <td>Reading</td>
-                                <td>9:00 pm</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>+91</td>
-                                <td>9089876756</td>
-                                <td>New Order</td>
-                                <td>Learning</td>
-                                <td>5:00 pm</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>+98</td>
-                                <td>01989876756</td>
-                                <td>Existing Order</td>
-                                <td>Reading</td>
-                                <td>9:00 pm</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>+91</td>
-                                <td>9089876756</td>
-                                <td>New Order</td>
-                                <td>Learning</td>
-                                <td>5:00 pm</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>+98</td>
-                                <td>01989876756</td>
-                                <td>Existing Order</td>
-                                <td>Reading</td>
-                                <td>9:00 pm</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>+91</td>
-                                <td>9089876756</td>
-                                <td>New Order</td>
-                                <td>Learning</td>
-                                <td>5:00 pm</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>+98</td>
-                                <td>01989876756</td>
-                                <td>Existing Order</td>
-                                <td>Reading</td>
-                                <td>9:00 pm</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>+91</td>
-                                <td>9089876756</td>
-                                <td>New Order</td>
-                                <td>Learning</td>
-                                <td>5:00 pm</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>+98</td>
-                                <td>01989876756</td>
-                                <td>Existing Order</td>
-                                <td>Reading</td>
-                                <td>9:00 pm</td>
-                            </tr>
-
-                          
-                         
-                            
-                        </tbody>
-                    </table>
+                        
+						     <tbody class="tbodys">
+                         <?php
+									while ($row = mysqli_fetch_array($call_result))
+									{
+										echo '<tr class="each-rows-secss">
+												<td>'.$row['id'].'</td>
+												<td>'.$row['phone'].'</td>
+												<td>'.$row['order_type'].'</td>
+												<td>'.$row['reason'].'</td>
+                                     <td>'.$row['contact_time'].'</td>
+                                     <td>'.$row['timestamp'].'</td>
+											   </tr>';
+									}
+							   ?>
+                        </tbody> 
+			           </table>
                  </div>
             </div>
         </div>
@@ -695,7 +533,7 @@
                             History Of Registered User Details
                         <span>
                         <span class="exports-files">
-                           <button type="submit" class="exports">
+                           <button type="submit" id="reg_excel" class="exports">
                              <span class="exp">
                                 <i class="fa fa-upload" aria-hidden="true"></i>
                              </span>
@@ -703,202 +541,40 @@
                         <span>
                  </div>
                  <div class="common-table-details-sections">
-                    <table cellspacing="0" class="deatils-tables">
+                    <table id="reg_form_data" cellspacing="0" class="deatils-tables">
                         <tr class="table-headings">
-                            <th>Name</th>
+                            <th>Unique Id</th>
+							      <th>Name</th>
                             <th>Email</th>
-                            <th>Contact</th>
-                            <th>Country</th>
-                            <th>Education</th>
-                            <th>Date</th>
-                       
-                            
-    
+                            <th>Phone No</th>
+                            <th>Education lebel</th>
+                            <th>Creation Date</th>
                         </tr>
                         <tbody class="tbodys">
-                            <tr class="each-rows-secss">
-                                <td>Rohan</td>
-                                <td>soni@gmail.com</td>
-                                <td>9089876756</td>
-                                <td>India</td>
-                                <td>B.Tech</td>
-                                <td>20-11-2018</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>Rohan</td>
-                                <td>soni@gmail.com</td>
-                                <td>9089876756</td>
-                                <td>India</td>
-                                <td>B.Tech</td>
-                                <td>20-11-2018</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>Rohan</td>
-                                <td>soni@gmail.com</td>
-                                <td>9089876756</td>
-                                <td>India</td>
-                                <td>B.Tech</td>
-                                <td>20-11-2018</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>Rohan</td>
-                                <td>soni@gmail.com</td>
-                                <td>9089876756</td>
-                                <td>India</td>
-                                <td>B.Tech</td>
-                                <td>20-11-2018</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>Rohan</td>
-                                <td>soni@gmail.com</td>
-                                <td>9089876756</td>
-                                <td>India</td>
-                                <td>B.Tech</td>
-                                <td>20-11-2018</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>Rohan</td>
-                                <td>soni@gmail.com</td>
-                                <td>9089876756</td>
-                                <td>India</td>
-                                <td>B.Tech</td>
-                                <td>20-11-2018</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>Rohan</td>
-                                <td>soni@gmail.com</td>
-                                <td>9089876756</td>
-                                <td>India</td>
-                                <td>B.Tech</td>
-                                <td>20-11-2018</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>Rohan</td>
-                                <td>soni@gmail.com</td>
-                                <td>9089876756</td>
-                                <td>India</td>
-                                <td>B.Tech</td>
-                                <td>20-11-2018</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>Rohan</td>
-                                <td>soni@gmail.com</td>
-                                <td>9089876756</td>
-                                <td>India</td>
-                                <td>B.Tech</td>
-                                <td>20-11-2018</td>
-                            </tr>
-
-                             <tr class="each-rows-secss">
-                                <td>Rohan</td>
-                                <td>soni@gmail.com</td>
-                                <td>9089876756</td>
-                                <td>India</td>
-                                <td>B.Tech</td>
-                                <td>20-11-2018</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>Rohan</td>
-                                <td>soni@gmail.com</td>
-                                <td>9089876756</td>
-                                <td>India</td>
-                                <td>B.Tech</td>
-                                <td>20-11-2018</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>Rohan</td>
-                                <td>soni@gmail.com</td>
-                                <td>9089876756</td>
-                                <td>India</td>
-                                <td>B.Tech</td>
-                                <td>20-11-2018</td>
-                            </tr>
-
-                             <tr class="each-rows-secss">
-                                <td>Rohan</td>
-                                <td>soni@gmail.com</td>
-                                <td>9089876756</td>
-                                <td>India</td>
-                                <td>B.Tech</td>
-                                <td>20-11-2018</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>Rohan</td>
-                                <td>soni@gmail.com</td>
-                                <td>9089876756</td>
-                                <td>India</td>
-                                <td>B.Tech</td>
-                                <td>20-11-2018</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>Rohan</td>
-                                <td>soni@gmail.com</td>
-                                <td>9089876756</td>
-                                <td>India</td>
-                                <td>B.Tech</td>
-                                <td>20-11-2018</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>Rohan</td>
-                                <td>soni@gmail.com</td>
-                                <td>9089876756</td>
-                                <td>India</td>
-                                <td>B.Tech</td>
-                                <td>20-11-2018</td>
-                            </tr>
-
-                             <tr class="each-rows-secss">
-                                <td>Rohan</td>
-                                <td>soni@gmail.com</td>
-                                <td>9089876756</td>
-                                <td>India</td>
-                                <td>B.Tech</td>
-                                <td>20-11-2018</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>Rohan</td>
-                                <td>soni@gmail.com</td>
-                                <td>9089876756</td>
-                                <td>India</td>
-                                <td>B.Tech</td>
-                                <td>20-11-2018</td>
-                            </tr>
-                            <tr class="each-rows-secss">
-                                <td>Rohan</td>
-                                <td>soni@gmail.com</td>
-                                <td>9089876756</td>
-                                <td>India</td>
-                                <td>B.Tech</td>
-                                <td>20-11-2018</td>
-                            </tr>
-
-                             <tr class="each-rows-secss">
-                                <td>Rohan</td>
-                                <td>soni@gmail.com</td>
-                                <td>9089876756</td>
-                                <td>India</td>
-                                <td>B.Tech</td>
-                                <td>20-11-2018</td>
-                            </tr>
-                          
-
-                          
-                         
-                            
-                        </tbody>
+                         <?php
+									while ($row = mysqli_fetch_array($reg_result))
+									{
+										echo '<tr class="each-rows-secss">
+												<td>'.$row['id'].'</td>
+												<td>'.$row['name'].'</td>
+												<td>'.$row['email'].'</td>
+												<td>'.$row['phone'].'</td>
+                                     <td>'.$row['education'].'</td>
+                                     <td>'.$row['timestamp'].'</td>
+											   </tr>';
+									}
+							   ?>
+                        </tbody> 
                     </table>
                  </div>
             </div>
-        </div>
-        
-</div>
+        </div>     
+   </div>
 <div class="footer-sec">
         Online Assignment Help
 </div>
-
-
-
 </body>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -925,5 +601,41 @@
               $('#'+tt).addClass("active-components").removeClass("hide");
           }
         });
+		
 </script>
+
+<script type="text/javascript" src="assets/js/tableExport.js"></script>
+<script type="text/javascript" src="assets/js/jquery.base64.js"></script>
+
+<script type="text/javascript">
+
+        $(document).ready(function(e){
+			$("#miniorder_excel").click(function(e){
+				$("#mini_order_data").tableExport({
+					type: 'excel',
+					escape: 'false'
+				});
+			});
+		});
+		
+	    $(document).ready(function(e){
+			$("#callback_excel").click(function(e){
+				$("#callback_form_data").tableExport({
+					type: 'excel',
+					escape: 'false'
+				});
+			});
+		});
+		
+		$(document).ready(function(e){
+			$("#reg_excel").click(function(e){
+				$("#reg_form_data").tableExport({
+					type: 'excel',
+					escape: 'false'
+				});
+			});
+		});
+		
+</script>
+
 </html>

@@ -56,24 +56,19 @@
                                                     <span class="thumb-iconss animated zoomIn  swing">
                                                        <i class="fa fa-phone calls" aria-hidden="true"></i>
                                                     </span>
-
                                                 </span>
                                                 <span class="sub-hds">
                                                     24*7 Call & Support Services
                                                 </span>
-                                              
-
                                           </div>
                                           <div class="sub-text-notify">
                                                <span class="sb-text">
                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                              
+                                               Lorem Ipsum is simply dummy text of the printing and typesetting industry.    
                                                </span>
                                           </div>
-
                                        </div>
                                   </div>
                                   <div class="rt-sec">
@@ -107,16 +102,13 @@
                                                                         <input id="radio-1" name="radio" type="radio">
                                                                         <label for="radio-1" class="radio-label">NEW ORDER</label>
                                                                     </div>
-  
                                                                 </li>
                                                                 <li> 
                                                                    <div class="radio">
                                                                         <input id="radio-2" name="radio" type="radio">
                                                                         <label for="radio-2" class="radio-label">EXISTING ORDER</label>
                                                                     </div>
-  
-                                                                </li>
-                                                           
+                                                                </li>                                         
                                                           <ul>
                                                       </div>
                                                       <div class="get-each-sec">
@@ -156,35 +148,24 @@
                                                                    <select class="selects-drop">
                                                                         <option>AM</option>
                                                                         <option>PM</option>
-                                                                     
                                                                     </select>
-  
                                                                </li>
-                                                           
-                                                           
                                                           <ul>
                                                       </div>
-                                                  
                                                   </div>
                                                    <div class="call-back-submit">
                                                         <button type="submit" class="only-submit">
                                                             Submit
                                                         </button>
-
                                                     </div>
                                             </div>
                                         </div>
                                    </div>
                              </div>
-                          
-
-
                         </div>
-
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     <div class="online-login-assigments">
@@ -213,90 +194,80 @@
                             Sign Up
                         </span>
                     </div>
-                    <div class="form-sections-login">
+                    
+					 <form action="connection.php" method="post">
+					    <div class="form-sections-login">
                         <div class="lg-fr ">
-                            <input type="text" placeholder="Enter Name" />
+                            <input type="text" name="reg_name" id="reg_name" placeholder="Enter Name" required="true" />
                             <span class="users-pp">
                                 <i class="fa fa-user" aria-hidden="true"></i>
-
                             </span>
                         </div>
                         <div class="lg-fr ">
-                            <input type="email" placeholder="Enter Email" />
+                            <input type="email" name="reg_email" id="reg_email" placeholder="Enter Email" required="true" />
                             <span class="users-pp">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
-
                             </span>
                         </div>
                         <div class="lg-fr ">
-                            <input type="text" placeholder="Enter Country" />
+                            <input type="text"  name="reg_phone" id="reg_phone" placeholder="Enter Phone Number" required="true" />
                             <span class="users-pp">
                                 <i class="fa fa-globe" aria-hidden="true"></i>
-
                             </span>
                         </div>
-
                         <div class="lg-fr ">
                             <span class="deadline-text--educations">
-                                Higher Education
+                                Education Level
                             </span>
                             <div class="selected-timezone">
-
-
-                                <select class="setected-time-zone">
-                                    <option>B.Tech</option>
-                                    <option>M.Tech</option>
-                                    <option>Bsc</option>
-                                    
+                                <select name="reg_education" class="setected-time-zone">
+								           <option value="Ph.D">Ph.D</option>
+                                    <option value="Post Graduate">Post Graduate</option>
+                                    <option value="Under Graduate">Under Graduate</option>
+                                    <option value="Secondary School">Secondary School</option>
+                                    <option value="High School">High School</option>
                                 </select>
                                 <span class="users-pp">
                                     <i class="fa fa-university" aria-hidden="true"></i>
-
                                 </span>
-
                             </div>
-
-
-
-
                         </div>
                         <div class="lg-fr ">
-                            <input type="date" placeholder="Enter DOB" />
+                            <input type="password"  name="reg_password" id="reg_password" placeholder="Enter Password" required="true" />
                             <span class="users-pp">
-                                <i class="fa fa-calendar" aria-hidden="true"></i>
-
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <div class="lg-fr ">
+                            <input type="password"  placeholder="Confirm Password" required="true"/>
+                            <span class="users-pp">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
                             </span>
                         </div>
                         <div class="signup-notify">
                             <p>
-                                <input type="checkbox" id="test1" />
+                                <input type="checkbox" id="test1" required="true"/>
                                 <label for="test1">I agree to
                                     <a class="links" href="#" target="_blank">Terms &amp; Conditions</a> and
                                     <a class="links" href="#" target="_blank">Privacy Policy</a> set by OnlineAssigment</label>
                             </p>
-
-
                         </div>
                         <div class="submit-buttin-sections">
-                            <button type="submit" class="signin">
-                                Sign in
-
+                            <button type="submit" class="signin" name="registersubmit">
+                                Register
                             </button>
                         </div>
                         <div class="notifications-sign">
                             <span class="notify-text">
                                 Already signed up?
-
                                 <a href="login.php" class="signup">
                                     SignIn
                                 </a>
                                 Instead
-
                             </span>
                         </div>
-
                     </div>
-
+                 <form>
                 </div>
                 <div class="lg-sub-inners-right-sec">
                     <div class="lg-sub-inners-sections">
@@ -313,8 +284,6 @@
                             </span>
                             <p class="user-testimonial">“Looking for online essay, thesis or dissertation help? OnlineAssignmenthelp.com is your destination”
                             </p>
-
-
                         </div>
                     </div>
                 </div>

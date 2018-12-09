@@ -62,7 +62,6 @@
                             Call
                             <br> Back
                         </span>
-
                     </div>
                 </div>
                 <div class="notify-outer-poposs">
