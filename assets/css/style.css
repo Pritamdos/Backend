@@ -46,7 +46,7 @@ body
     background-attachment: fixed;
     background-size:cover;
     position: relative;
-    height:90vh;
+    height:70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,6 +153,19 @@ body
     top: 50%;
     transform: translateY(-50%);
 }
+.onl-sub-inners-left-section-reviews
+{
+    width:100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+} 
 .only-sub-inners-right-sections
 {
     width:50%;
@@ -4157,6 +4170,8 @@ span.wd
     .experts-details-lists{padding:40px 0!important;}
     span.st-headers{font-size:16px!important;line-height:28px!important;}
     span.st-helps{font-size:14px!important;line-height:22px!important;}
+    .listen-to-clients{font-size:28px!important;line-height:38px!important;}
+    .onl-sub-inners-sec-reviews{padding:0!important;}
 
     
     
@@ -4219,6 +4234,13 @@ span.wd
     .card-outer,.card-outer-work,.card-outer-work-hire{padding: 0 0px 30px!important;}
     .stp-left,.stp-right{width:100%!important;}
     .order-details-sc{padding:25px!important;}
+    .reviews-details-left-sections strong{font-size:32px!important;}
+    .reviews-details-right-sections strong{font-size:32px!important;}
+    .text-uppercase{font-size:13px!important;}
+    .reviews-details-left-sections,.reviews-details-right-sections{width:100%!important;border:none!important;}
+    .reviews-deatils-sectionsP{padding:10px!important;}
+    
+
   
 }
 @media screen and (max-width:520px)

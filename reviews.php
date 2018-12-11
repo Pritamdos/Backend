@@ -22,7 +22,7 @@
     <div class="onl-banner-sections">
         <div class="onl-inrs-banner-reviews">
             <div class="onl-sub-inners-sec-reviews">
-                <div class="onl-sub-inners-left-section">
+                <div class="onl-sub-inners-left-section-reviews">
                     <div class="welcome-online-help animatable zoomIn">
                          <span class="listen-to-clients">
                             Listen to Our 98% Happy Clients
