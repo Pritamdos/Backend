@@ -7,13 +7,13 @@
                     </span>
                     <ul class="f1-ul">
                         <li class="ft-list">
-                            <a href="javascript:void(0)" class="at">About us </a>
+                            <a href="aboutUs.php" class="at">About us </a>
                         </li>
                         <li class="ft-list">
-                            <a href="javascript:void(0)" class="at">How it works </a>
+                            <a href="howItWorks.php" class="at">How it works </a>
                         </li>
                         <li class="ft-list">
-                            <a href="javascript:void(0)" class="at">Jobs</a>
+                            <a href="jobs.php" class="at">Jobs</a>
                         </li>
                     </ul>
                 </div>
@@ -31,19 +31,19 @@
                             <a href="FAQ.php" class="at">FAQs</a>
                         </li>
                         <li class="ft-list">
-                            <a href="javascript:void(0)" class="at">Resources</a>
+                            <a href="resources.php" class="at">Resources</a>
                         </li>
                         <li class="ft-list">
-                            <a href="javascript:void(0)" class="at">Premium </a>
+                            <a href="premium.php" class="at">Premium </a>
                         </li>
                         <li class="ft-list">
-                            <a href="javascript:void(0)" class="at">Privacy Policy </a>
+                            <a href="privacy.php" class="at">Privacy Policy </a>
                         </li>
                         <li class="ft-list">
-                            <a href="javascript:void(0)" class="at">Terms of use</a>
+                            <a href="termsofuse.php" class="at">Terms of use</a>
                         </li>
                         <li class="ft-list">
-                            <a href="javascript:void(0)" class="at">Revision and Refund policy
+                            <a href="revisionandrefund.php" class="at">Revision and Refund policy
                             </a>
                         </li>
                     </ul>
