@@ -3974,12 +3974,13 @@ span.closed-modals
     width: 100%;
     float: left;
     padding: 50px 50px 50px 50px;
-    margin-top: 80px;
+    margin-top:71px;
 }
 .order-stepper-ir-sec
 {
     width:800px;
     margin:0 auto;
+    min-height:528px;
 }
 @media screen and (max-width:800px) 
 {

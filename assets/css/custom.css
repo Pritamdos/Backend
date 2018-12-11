@@ -420,7 +420,8 @@ span.get-call
     width:30%;
     float: left;
 }
-.right-s-get {
+.right-s-get 
+{
     width:70%;
     float: left;
 }
@@ -440,7 +441,7 @@ select.selects-drop:focus
 {
     outline:none!important;
 }
-.right-s-get  input[type="number"] 
+.right-s-get  input[type="number"],.right-s-get  input[type="text"]  
 {
     height: 36px;
     border: 1px solid #ccc;
@@ -451,6 +452,20 @@ select.selects-drop:focus
     color: #666;
     margin: 0;
     line-height: 20px;
+}
+.get-each-sec input[type="time"]
+{
+    height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+    line-height: 20px;
+    width:100%;
+    float: left;
 }
 .right-s-get  input[type="number"]:focus
 {
