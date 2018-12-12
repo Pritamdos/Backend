@@ -2,20 +2,18 @@
 <html>
 
 <head>
-    <title>OnlineAssignmenthelp.com -How it works </title>
+    <title>Terms And Conditions of OnlineAssignmenthelp.com </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta title="Want to place your order with the best assignment writing service? Find out how to order your essays, dissertation and thesis to assignment experts here. 
-
-
+    <meta title=" All our terms and conditions are clearly laid down in this page. Go through each section carefully before you avail our services. By placing an order, you agree to all.
                 ">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/custom.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/font.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/animated.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/scrollanimations.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css"
-    />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -26,150 +24,119 @@
             <div class="onl-sub-inners-sec">
                 <div class="onl-sub-inners-about-section animated fadeInLeft">
                     <span class="welcome-online-help ">
-                    Want to place your order with the best assignment writing service? Find out how to order your essays, dissertation and thesis to assignment experts here. 
-
-
-
-
+                       Want to place your order with the best assignment writing service? Find out how to order your essays, dissertation and thesis to assignment experts here. 
                     </span>
                 </div>
 
             </div>
-            <div class="notifiicons">
-                <div class="notif-flex">
-                    <div class="notif-btn">
-                        <span class="call-iconss swing">
-                            <i class="fa fa-phone calls" aria-hidden="true"></i>
-                        </span>
-
-                        <span class="call-nows">
-                            Call
-                            <br> Back
-                        </span>
-                        </span>
+            <?php include './notification.php'?>
+        </div>
+    </div>
+    <div class="dash-cont">
+        <div class="wrapper">
+            <div class="header-sections">
+                <span class="world-abouts">
+                3 Simple Steps Is All It Takes To Get The Best Assignment Of Your Life
+                </span>
+            </div>
+            <div class="dashboard-inner-wraper">
+                <div class="card-outer-about bounceInLeft animated">
+                  <span class="about-assigments">
+                     We fully understand that academic world is highly competitive, and to succeed in this sphere,
+                     students have to submit several assignments on the shortest of deadlines. 
+                     The pressure of this insurmountable task can take a toll on the smartest of students
+                    and lead to paranoia and anxiety. In such cases, what students need is a quick fix to all
+                    their woes and OnlineAssignmenthelp.com is here to help with that.
+                    As assignment providers, our job is to make your difficult life as easy as possible,
+                    which is why we’ve kept our ordering process super simple. 
+                    You don’t have to go complex manuals or lengthy forms to get assignment help from us.
+                     Just follow these 3 easy steps- 
+                  </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dash-cont how-work h-online">
+        <div class="wrapper">
+            <div class="header-sections">
+                <span class="world-abouts-orders">
+                    <span class="orders-nows">
+                        How it Works
+                    </span>
+                </span>
+            </div>
+            <div class="dashboard-inner-wraper">
+                <div class="card-outer-work-hire fadeInLeft animated">
+                    <div class="card-inner-section-work work-heir">
+                        <div class="work-headers-works">
+                            Specify Your Requirements 
+                        </div>
+                        <div class="card-online-list card-online-hr">
+                            <ul>
+                                <li>
+                                On our website, you will find the assignment submission form. Fill it up with the correct details,
+                                mentioning the specifics of 
+                                your assignment and upload all relevant files. Once done, we will provide you with a price quote.
+                                in the rare case that you are dissatisfied with the assignment provided by us,
+                                you get the option to have it revised as many times as you desire.  
+                                </li>
+                              
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="notify-outer-popos">
-                    <div class="notif-item animated slideInUp slideInDown hide">
-                        <div class="notify-inners-sec">
-                            <div class="notify-haeders-sec">
-                                <span class="online-headers-test">
-                                    Welcome in Online Asssigment
-                                </span>
-                                <span class="closed-iconss" id="slide-down">
+                <div class="card-outer-work-hire fadeInRight animated">
+                    <div class="card-inner-section-work  work-heir">
+                        <div class="work-headers-works">
+                             Make The Payment 
+                        </div>
+                        <div class="card-online-list card-online-hr">
+                            <ul>
+                                <li>
+                                   As soon as you get the price quote, you can proceed to the payment gateway 
+                                   and make your payment. Accepted methods include online banking, 
+                                   PayPal and credit or debit card.
+                                   That’s not all. We are also always ready to assist you 24x7 and clear all your doubts and queries as
+                                    and when they arise. Order your assignment with us now and receive the best essay, 
+                                dissertation, thesis and assignment help of your life.  
 
-                                    <i class="fa fa-times  drop-arrow" aria-hidden="true"></i>
-                                </span>
-                            </div>
-                            <div class="notify-form-outers">
-                                <div class="form-inner-sections">
-                                    <div class="each-rows-inputs">
-                                        <input type="text" placeholder="Enter your name" />
-                                        <span class="users-pp">
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-
-                                        </span>
-                                    </div>
-                                    <div class="each-rows-inputs">
-                                        <input type="text" placeholder="Enter your phone" />
-                                        <span class="users-pp">
-                                            <i class="fa fa-mobile" aria-hidden="true"></i>
-
-                                        </span>
-
-                                    </div>
-                                    <div class="each-rows-inputs">
-                                        <input type="email" placeholder="Enter your email" />
-                                        <span class="users-pp">
-                                            <i class="fa fa-envelope" aria-hidden="true"></i>
-
-                                        </span>
-                                    </div>
-                                    <div class="each-rows-inputs each-rows-inputss">
-                                        <span class="deadline-text-zone">
-                                            Time Zone
-                                        </span>
-                                        <div class="selected-timezone">
-
-
-                                            <select class="setected-time-zone">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </select>
-                                            <span class="users-pp">
-                                                <i class="fa fa-clock-o" aria-hidden="true"></i>
-
-                                            </span>
-
-                                        </div>
-
-
-
-
-                                    </div>
-
-                                    <div class="each-rows-inputs each-rows-inputss">
-                                        <span class="deadline-text">
-                                            Expected Calling Date
-                                        </span>
-                                        <div class="each-rows-deadline-sec">
-                                            <div class="date-starts-left">
-                                                <input type="date" placeholder="Enter start date" />
-                                            </div>
-                                            <div class="date-starts-right">
-                                                <input type="date" placeholder="Enter last date" />
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="each-rows-inputs">
-                                        <span class="deadline-text-zone">
-                                            Preferable time
-                                        </span>
-                                        <div class="each-rows-deadline-time-zone">
-                                            <div class="date-starts-time">
-                                                <input type="time" placeholder="Enter start date" />
-                                                <span class="users-pp">
-                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
-
-                                                </span>
-                                            </div>
-
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                                <div class="submit-buttin-sections">
-                                    <button type="submit" class="only-submit">
-                                        Submit
-
-                                    </button>
-
-                                </div>
-                            </div>
-
-
+                                </li>
+                            </ul>
                         </div>
 
                     </div>
                 </div>
+                <div class="card-outer-work-hire fadeInRight animated">
+                    <div class="card-inner-section-work  work-heir">
+                        <div class="work-headers-works">
+                             Get Completed Solution
+                        </div>
+                        <div class="card-online-list card-online-hr">
+                            <ul>
+                                <li>
+                                A fully referenced, well-researched and written assignment of top notch quality
+                                 will be delivered to your inbox on our website much before the given deadline. 
+                                Isn’t that amazingly easy? The entire process takes just about 5 minutes of your time and
+                                ensures you long lasting peace of mind that your paper is in good hands. However,
+                               
+                                
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+
             </div>
+
 
         </div>
     </div>
     <?php include './footer.php'?>
-
-
-
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
 <script src="./assets/js/scrollanimations.js"></script>
 <script src="./assets/js/style.js"></script>
 

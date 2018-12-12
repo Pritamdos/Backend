@@ -565,8 +565,7 @@
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
 <script src="./assets/js/scrollanimations.js"></script>
 <script src="./assets/js/style.js"></script>
 

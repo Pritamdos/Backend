@@ -36,131 +36,103 @@
                 </div>
 
             </div>
-            <div class="notifiicons">
-                <div class="notif-flex">
-                    <div class="notif-btn">
-                        <span class="call-iconss swing">
-                            <i class="fa fa-phone calls" aria-hidden="true"></i>
-                        </span>
+            <?php include './notification.php'?>
 
-                        <span class="call-nows">
-                            Call
-                            <br> Back
-                        </span>
-                        </span>
-                    </div>
+        </div>
+    </div>
+    <div class="dash-cont">
+        <div class="wrapper">
+            <div class="header-sections">
+                <span class="world-abouts">
+                   Privacy Policy Of OnlineAssignmenthelp.com
+                </span>
+            </div>
+            <div class="dashboard-inner-wraper">
+                <div class="card-outer-about bounceInLeft animated">
+                  <span class="about-assigments">
+                  We know that one of your top concerns when availing assignment or essay help online is the protection of your privacy and your personal details. At OnlineAssignmenthelp.com, we treat the security of your privacy as our paramount ethical duty, thereby ensuring that your information is safe in our hands. We also maintain complete honesty and transparency with our customers,
+                  and in spirit of it have outlined our privacy policy below so you know exactly what’s going on- 
+                  </span>
+
                 </div>
-                <div class="notify-outer-popos">
-                    <div class="notif-item animated slideInUp slideInDown hide">
-                        <div class="notify-inners-sec">
-                            <div class="notify-haeders-sec">
-                                <span class="online-headers-test">
-                                    Welcome in Online Asssigment
-                                </span>
-                                <span class="closed-iconss" id="slide-down">
+            </div>
+        </div>
+    </div>
+    <div class="dash-cont how-work">
+        <div class="wrapper">
+            <div class="dashboard-inner-wraper">
+                <div class="card-outer-work zoomIn animated">
+                    <div class="card-inner-section-work">
+                        <div class="inner-test">
+                            <ul>
+                                <li>
+                                We never leak student information and the data we gather is strictly kept within the bounds of the company 
 
-                                    <i class="fa fa-times  drop-arrow" aria-hidden="true"></i>
-                                </span>
-                            </div>
-                            <div class="notify-form-outers">
-                                <div class="form-inner-sections">
-                                    <div class="each-rows-inputs">
-                                        <input type="text" placeholder="Enter your name" />
-                                        <span class="users-pp">
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-
-                                        </span>
-                                    </div>
-                                    <div class="each-rows-inputs">
-                                        <input type="text" placeholder="Enter your phone" />
-                                        <span class="users-pp">
-                                            <i class="fa fa-mobile" aria-hidden="true"></i>
-
-                                        </span>
-
-                                    </div>
-                                    <div class="each-rows-inputs">
-                                        <input type="email" placeholder="Enter your email" />
-                                        <span class="users-pp">
-                                            <i class="fa fa-envelope" aria-hidden="true"></i>
-
-                                        </span>
-                                    </div>
-                                    <div class="each-rows-inputs each-rows-inputss">
-                                        <span class="deadline-text-zone">
-                                            Time Zone
-                                        </span>
-                                        <div class="selected-timezone">
-
-
-                                            <select class="setected-time-zone">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </select>
-                                            <span class="users-pp">
-                                                <i class="fa fa-clock-o" aria-hidden="true"></i>
-
-                                            </span>
-
-                                        </div>
-
-
-
-
-                                    </div>
-
-                                    <div class="each-rows-inputs each-rows-inputss">
-                                        <span class="deadline-text">
-                                            Expected Calling Date
-                                        </span>
-                                        <div class="each-rows-deadline-sec">
-                                            <div class="date-starts-left">
-                                                <input type="date" placeholder="Enter start date" />
-                                            </div>
-                                            <div class="date-starts-right">
-                                                <input type="date" placeholder="Enter last date" />
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="each-rows-inputs">
-                                        <span class="deadline-text-zone">
-                                            Preferable time
-                                        </span>
-                                        <div class="each-rows-deadline-time-zone">
-                                            <div class="date-starts-time">
-                                                <input type="time" placeholder="Enter start date" />
-                                                <span class="users-pp">
-                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
-
-                                                </span>
-                                            </div>
-
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                                <div class="submit-buttin-sections">
-                                    <button type="submit" class="only-submit">
-                                        Submit
-
-                                    </button>
-
-                                </div>
-                            </div>
-
+                                </li>
+                            </ul>
 
                         </div>
+                    </div>
+                </div>
+                <div class="card-outer-work zoomIn animated">
+                    <div class="card-inner-section-work">
+                        <div class="inner-test">
+                            <ul>
+                                <li>
+                                We never handout the personal details students provide us to third-party sources 
 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-outer-work zoomIn animated">
+                    <div class="card-inner-section-work">
+                        <div class="inner-test">
+                            <ul>
+                                <li>
+                                We do not share the assignment writer’s information with third-party sources 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-outer-work zoomIn animated">
+                    <div class="card-inner-section-work">
+                        <div class="inner-test">
+                            <ul>
+                                <li>
+                                                                    
+                                    As far as payments are concerned, they are processed through and handled by PayPal, making them completely secure. We have a collaboration with
+                                    PayPal via which only PayPal deals with the details of the client’s credit cards and not 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-outer-work zoomIn animated">
+                    <div class="card-inner-section-work">
+                        <div class="inner-test">
+                            <ul>
+                                <li>
+                                In exceptional cases, OnlineAssignmenthelp.com reserves the right to disclose student information if demanded by the law. We only do so in cases where we believe that the disclosure of such information is necessitated in order to protect our company’s rights and those of our employees’, and also for instances in which court orders and/or judicial or legal proceedings are served on our website
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-outer-work zoomIn animated">
+                    <div class="card-inner-section-work">
+                        <div class="inner-test">
+                            <ul>
+                                <li>
+                                We also hold the right to modify or alter the above-mentioned privacy policy at any time as per our own discretion. Students should review the privacy policy section on our website from time to time to be informed as such as changes as clients will not be personally notified. All the changes made will be mentioned will be Privacy Policy section on the website and the continued use of our services and/or software will act as the client’s agreement to the changes of our Privacy Policy. 
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     <?php include './footer.php'?>

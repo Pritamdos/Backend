@@ -2,7 +2,7 @@
 <html>
 
 <head>
-     <title>Terms And Conditions of OnlineAssignmenthelp.com </title>
+    <title>Terms And Conditions of OnlineAssignmenthelp.com </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta title=" All our terms and conditions are clearly laid down in this page. Go through each section carefully before you avail our services. By placing an order, you agree to all.
                 ">
@@ -11,9 +11,8 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/font.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/animated.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/scrollanimations.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css"
-    />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -223,8 +222,7 @@
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
 <script src="./assets/js/scrollanimations.js"></script>
 <script src="./assets/js/style.js"></script>
 
